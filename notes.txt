@@ -1,0 +1,17 @@
+props  vs state - 
+
+state is a local variable - data that has a functional scope . 
+props- we pass the data from one component to another component using props . 
+
+.. props drilling . 
+passing the data- parent - child -child -child -child ....
+
+Lifting the state up -- 
+
+Every component has its independent state . you can not update once state with other component for this we use the concept of state lifiting . 
+
+
+if we have to perform props drilling more than 2-3 level then we avoid it doing.
+we use to store our data at a central place . we avoid local storage as it's a costly process. React provide us a context . some companies uses redux etc... 
+
+In classbased component - We use it as component  <UserContext> {(value)=>{h1 value.user.name}}</UserContext>
