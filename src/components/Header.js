@@ -16,9 +16,9 @@ return (
 {/* <h1>{user.name}</h1> */}
     <ul className='header-list'>
         <Link className='link' to="/"><li className='nav-links' key="1">Home</li></Link>
-        <Link className='link' to="/about"><li className='nav-links' key="2">About</li></Link>
-        <Link className='link'><li className='nav-links' key="3">Contact</li></Link>
-        <Link className='link'><li className='nav-links' key="4">Support</li></Link> 
+        {/* <Link className='link' to="/about"><li className='nav-links' key="2">About</li></Link> */}
+        {/* <Link className='link'><li className='nav-links' key="3">Contact</li></Link> */}
+        {/* <Link className='link'><li className='nav-links' key="4">Support</li></Link>  */}
         <Link className='link' to="/instamart"><li className='nav-links' key="4">Instamart</li></Link> 
         <Link className='link' to="/cart"><li className='nav-links' key="4">Cart -{cartItems.length}</li></Link>
     </ul>
