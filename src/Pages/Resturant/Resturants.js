@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import Shimmer from "../Shimmer/Shimmer";
 import { Link } from "react-router-dom";
 import { GET_RESTAURANTS_LIST } from "../../constant.js";
+
 // import UserContext from "../utills/UserContext";
 //function for search functionality -
 function filterData(searchText, restaurants) {
@@ -45,7 +46,7 @@ const Resturant = () => {
     <div>
     <input className="search-input"
         type="text"
-        placeholder=""
+        placeholder="search"
         value={searchText}
         onChange={(e) => {
           setSearchText(e.target.value);
@@ -71,8 +72,8 @@ const Resturant = () => {
         {filterResturantsList.map((res) => {
           return (
             <Link className="link" key={res.info.id} to={"returant/" + res.info.id}>
-              {" "}
-              <ResturantCard resturant={res} key={res.info.id} />;
+             
+              <ResturantCard resturant={res} key={res.info.id} />
             </Link>
           );
         })}

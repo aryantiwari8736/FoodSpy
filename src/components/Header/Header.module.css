@@ -1,0 +1,33 @@
+.header_div{
+   
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    background-color: white;
+    top: 0;
+  
+}
+.logo_img{
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 22px;
+}
+.header_list{
+    display: flex;
+    align-items: center;
+}
+.nav_links{
+    font-size: 1.2em;
+    list-style: none;
+   text-decoration: none;
+   margin: 10px;
+   color: rgb(10, 10, 42);
+}
+.nav_links:hover{
+    color: rgb(161, 30, 30);
+    font-weight: bold;
+}

@@ -14,10 +14,13 @@ const handleRemoveItem = ()=>{
     dispatch(removeItem());
 }
   return (
-    <div>
-      <button className="remove-btn" onClick={()=>handleClearCart()}>Clear Cart</button>
-   {cartItems.map((e)=>(<div className="cart-cont"><Cardcart data={e}/> <div className="btn-div"><button className="remove-btn" onClick={()=>handleRemoveItem()}>Remove Item</button></div></div>))}
-   
+    <div className="cartpage_container">
+     <div>
+   {cartItems.map((e)=>(<div className="cart-cont"><Cardcart data={e}/> <div className="btn-div"></div></div>))}
+   </div>
+   <div>
+    
+   </div>
     </div>
   )
 }

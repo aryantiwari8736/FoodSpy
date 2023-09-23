@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useState } from "react";
-
+import './App.css'
 import ReactDOM from "react-dom/client";
-import Header from "./src/components/Header";
+import Header from "./src/components/Header/Header";
 import Body from "./src/Pages/Body/Body";
 import Footer from "./src/components/Footer";
 import Error from "./src/components/Error";
@@ -14,6 +14,8 @@ import UserContext from "./src/utills/UserContext.js";
 import { Provider } from "react-redux";
 import store from "./src/utills/store";
 import Cart from "./src/Pages/Cart/Cart";
+
+import { Toaster } from 'react-hot-toast';
 
 //chunking
 //lazy loading
@@ -31,6 +33,18 @@ const App = () => {
   })
   
   return (
+    <>
+<Toaster
+                    position="top-right"
+                    toastOptions={{
+                        success: {
+                            theme: {
+                                primary: '#4aed88',
+                            },
+                        },
+                    }}
+                ></Toaster>
+
     <Provider store={store}>
     <UserContext.Provider value={{user:user,setUser:setUser}}>
       <Header />
@@ -38,6 +52,7 @@ const App = () => {
       <Footer />
     </UserContext.Provider>
     </Provider>
+    </>
   );
 };
 //creating router configuration -- using createBrowserRouter Function provided by react-router-dom library
