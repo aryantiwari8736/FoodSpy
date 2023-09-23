@@ -30,8 +30,6 @@ const useRestaurant = (resId) => {
       const NestedItemCategory =
         "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory";
 
-     
-
       const menu = menuItemsList.map((item) => {
         if (
           item.card.card["@type"] === itemCategory ||

@@ -7,11 +7,10 @@ const ResturantCard = (props) =>{
     return(
         <div className="rest-card-container" >
         <div className="rest-card">
-            <img src={IMG_CDN_URL+props.resturant.data.cloudinaryImageId} alt="rest-img" className="rest-img" />
-            <h2 className="rest-name">{props.resturant.data.name}</h2>
+            <img src={IMG_CDN_URL+props.resturant.info.cloudinaryImageId} alt="rest-img" className="rest-img" />
+            <h2 className="rest-name ">{props.resturant.info.name}</h2>
             <h3>4 star</h3>
-            <h3>Burger,Pizza,tomato</h3>
-           
+            <h3>Burger,Pizza,tomato</h3> 
         </div>
         </div>
     )
